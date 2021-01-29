@@ -1,0 +1,71 @@
+@media only screen and (min-width: 601px) {
+  .header {
+    display: flex;
+    background-color: transparent;
+    background: none;
+    position: fixed;
+    top: 0%;
+    width: 1250px;
+    margin: 15px;
+    margin-left: 15px;
+    z-index: 100;
+  }
+
+  .header__logo {
+    height: 18px;
+    width: 75px;
+    margin-top: 7px;
+  }
+
+  .header__center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__center > p {
+    margin: 10px;
+    text-transform: uppercase;
+  }
+
+  .header__right {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+  }
+
+  .header__right > p {
+    margin: 10px;
+  }
+
+  .dehaze {
+    margin: 7px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    background-color: transparent;
+    background: none;
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    margin: 15px;
+    margin-left: 15px;
+    z-index: 100;
+  }
+  .header__center {
+    visibility: hidden;
+  }
+
+  .header__right > p {
+    visibility: hidden;
+  }
+  .dehaze {
+    position: fixed;
+    top: 2%;
+    left: 90%;
+  }
+}
